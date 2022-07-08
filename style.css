@@ -1,0 +1,188 @@
+:root {
+  --black: #141b1e;
+	--black1: #232a2d;
+  --white: #dadada;
+  --red: #e57474;
+  --green: #75cf72;
+  --yellow: #e0ba63;
+  --blue: #67b0e8;
+  --cyan: #6cbfbf;
+  --magenta: #c47fd5;
+  --lavender: #bab3e6;
+  --sky-blue: #5db7cb;
+  --pink: #ee9cdd;
+  --teal: #8ad8ef;
+  --orange: #e3a04f;
+}
+
+
+::placeholder {
+
+	color: #ccc;
+	font-size: 16px;
+	font-family: roboto, fontawesome;
+}
+
+* {
+	font-family: roboto;
+	outline: none;
+	line-height: .2em;
+	color: #eee;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #181f21;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	background-color: var(--black1);
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 4px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0 20px;
+}
+ul li {
+	margin: 5px;
+}
+ul li:first-child {
+	margin-bottom: 13px;
+}
+ul li:first-child i {
+	color: inherit;
+}
+
+form {
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+form input {
+	width: 450px;
+	border: none;
+	color: #eee;
+	border-bottom: 2px solid #ccc;
+	padding: 14px 24px;
+	transition: 0.15s;
+	background-color: transparent;
+	font-size: 16px;
+}
+
+form input:focus {
+	border-color: var(--teal);
+}
+
+@media screen and (max-width: 600px)
+{
+	#container {
+		width: 100%;
+		display: block;
+		position: unset;
+		transform: unset;
+		border-radius: 0;
+		bottom: 0;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	form {
+		position: unset;
+		transform: unset;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	form input {
+		width: 83%;
+	}
+}
+/* 
+@media screen and (max-height: 600px) {
+	#container {
+		bottom: 50px;
+		left: 25%;
+		transform: translateY(25%);
+	}
+} */
+
+/* color elements */
+.fa-brands {
+  border-radius: 5px;
+  padding: 15px;
+	display: inline-block;
+	font-size: 30px;
+}
+
+.fa-solid {
+	border-radius: 5px;
+	padding: 15px;
+	display: inline-block;
+	font-size: 30px;
+}
+.fa-github {
+  background-color: var(--black);
+}
+
+.fa-free-code-camp {
+  background-color: var(--magenta);
+  color: var(--black);
+}
+
+.fa-hackerrank {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.fa-reddit {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.fa-youtube {
+  background-color: var(--red);
+  color: var(--white);
+}
+.fa-spotify {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.fa-discord {
+  background-color: var(--magenta);
+  color: var(--white);
+}
+
+.fa-codepen {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.fa-stack-overflow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.fa-hacker-news {
+  background-color: var(--green);
+  color: var(--white);
+}
