@@ -180,6 +180,8 @@ form input:focus {
 .fa-stack-overflow {
   background-color: var(--yellow);
   color: var(--black);
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .fa-hacker-news {
