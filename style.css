@@ -1,3 +1,5 @@
+/****************** COLOR PALETTE ************************/
+
 :root {
   --black: #141b1e;
 	--black1: #232a2d;
@@ -15,20 +17,21 @@
   --orange: #e3a04f;
 }
 
+/********************************************************/
+
+
 
 ::placeholder {
-
 	color: #ccc;
 	font-size: 16px;
-	font-family: roboto, fontawesome;
+	font-family: roboto;
 }
 
 * {
 	font-family: roboto;
 	outline: none;
-	line-height: .2em;
-	color: #eee;
 	box-sizing: border-box;
+	color: var(--white);
 }
 
 body {
@@ -38,48 +41,45 @@ body {
 a {
 	text-decoration: none;
 }
-a:hover {
-	text-decoration: underline;
+
+#main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 #container {
 	background-color: var(--black1);
-	position: absolute;
-	bottom: 100px;
-	left: 50%;
-	transform: translateX(-50%);
 	border-radius: 4px;
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	vertical-align: middle;
+	align-items: center;
 }
 
 ul {
 	list-style: none;
-	padding: 0 20px;
+	padding: 0px;
 }
+
 ul li {
-	margin: 5px;
-}
-ul li:first-child {
-	margin-bottom: 13px;
-}
-ul li:first-child i {
-	color: inherit;
+	margin: 15px;
 }
 
 form {
-	position: absolute;
-	top: 23%;
-	left: 50%;
-	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: center;
 }
 
 form input {
 	width: 450px;
 	border: none;
-	color: #eee;
-	border-bottom: 2px solid #ccc;
+	color: var(--white);
+	border-bottom: 2px solid var(--white);
 	padding: 14px 24px;
 	transition: 0.15s;
 	background-color: transparent;
@@ -90,42 +90,24 @@ form input:focus {
 	border-color: var(--teal);
 }
 
-@media screen and (max-width: 600px)
+
+
+/*************** FOR SMALL WINDOW *************************/
+
+@media screen and (max-height: 400px)
 {
-	#container {
-		width: 100%;
-		display: block;
-		position: unset;
-		transform: unset;
-		border-radius: 0;
-		bottom: 0;
-		background-color: transparent;
-		box-shadow: none;
-	}
-
-	form {
-		position: unset;
-		transform: unset;
-		display: flex;
-		justify-content: center;
-		margin: 20px 0;
-		width: 100%;
-	}
-
-	form input {
-		width: 83%;
+	#main {
+		transform: translateX(-50%) translateY(0%);
+		top: 0;
 	}
 }
-/* 
-@media screen and (max-height: 600px) {
-	#container {
-		bottom: 50px;
-		left: 25%;
-		transform: translateY(25%);
-	}
-} */
 
-/* color elements */
+/********************************************************/
+
+
+
+/******************** BUTTONS ****************************/
+
 .fa-brands {
   border-radius: 5px;
   padding: 15px;
@@ -133,12 +115,6 @@ form input:focus {
 	font-size: 30px;
 }
 
-.fa-solid {
-	border-radius: 5px;
-	padding: 15px;
-	display: inline-block;
-	font-size: 30px;
-}
 .fa-github {
   background-color: var(--black);
 }
@@ -169,7 +145,7 @@ form input:focus {
 
 .fa-discord {
   background-color: var(--magenta);
-  color: var(--white);
+  color: var(--black);
 }
 
 .fa-codepen {
@@ -180,11 +156,12 @@ form input:focus {
 .fa-stack-overflow {
   background-color: var(--yellow);
   color: var(--black);
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 15px 20px;
 }
 
 .fa-hacker-news {
   background-color: var(--green);
   color: var(--white);
 }
+
+/********************************************************/
