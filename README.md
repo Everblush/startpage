@@ -1,3 +1,5 @@
+<img align="center" src="https://raw.githubusercontent.com/Everblush/assets/main/logo.png" alt="logo">
+
 <h2 align="center">Everblush StartPage</h2>
 
 <p align="center"> 
@@ -6,7 +8,7 @@
 
 # Preview 
 <p align="center"> 
-<img src="./asset/startpage.png" alt="startpage preview"> 
+<img src="https://raw.githubusercontent.com/Everblush/assets/main/startpage/startpage.png" alt="startpage preview"> 
 </p>
 
 ## Installation
